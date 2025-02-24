@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Aiswarya</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff4d6d, #ff99ac);
+            color: black;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .hidden {
+            display: none;
+        }
+        img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #ff1654;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #d60b45;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            margin-top: 20px;
+            cursor: pointer;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url('https://i.gifer.com/origin/9e/9ebd65c9b47e4c9271525154969828b5.gif');
+            background-size: cover;
+            opacity: 0.5;
+        }
+    </style>
+    <script>
+        function showImage() {
+            document.getElementById('photo').classList.remove('hidden');
+            document.getElementById('button').classList.add('hidden');
+        }
+        function showMessage() {
+            alert("Be with me forever ❤️🥰💖");
+        }
+    </script>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h1>இனிய பிறந்தநாள் வாழ்த்துக்கள் எனதுயிரே...</h1>
+        <button id="button" onclick="showImage()">Press here</button>
+        <img id="photo" src="Arjun and aiswarya.jpg" class="hidden" alt="Happy Moments">
+        <p>நீ பிறந்து 17 வருடங்கள் ஆகிவிட்டது உன் நினைவை ஏந்தி 3 வருடங்கள் கடந்தேன்...<br>
+        அதே போல் உன்னையும் நம் காதலையும் ஏந்தி வாழ்வின் இறுதி வரை வாழ ஆசை படுகிறேன்.... 🫶🏻<br>
+        உன் கைகளை என் கையில் ஏந்தி... 🫴🏻<br>
+        உன் பாத்தத்தை என் மடியில் ஏந்தி...<br>
+        உன் இதயத்தை என் இதயத்தில் பூட்டி...<br>
+        உன் பார்வையில் என்னை மூழ்கி...<br>
+        உன் உயிரை என் உயிராய் நான் காக்கே...😚 நீ பிறந்ததுக்கு வாழ்த்துக்கள்...</p>
+        <div class="heart" onclick="showMessage()">❤️</div>
+    </div>
+</body>
+</html>
